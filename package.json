@@ -6,7 +6,7 @@
   "activationCommands": {
     "atom-workspace": "cucumber-step:jump-to-step"
   },
-  "repository": "https://github.com/gaslight/atom-cucumber-step",
+  "repository": "https://github.com/ironweber/atom-cucumber-step",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

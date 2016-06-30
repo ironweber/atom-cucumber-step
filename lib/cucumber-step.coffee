@@ -6,8 +6,9 @@ module.exports =
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace',
+    atom.commands.add 'atom-workspace', {
       'cucumber-step:jump-to-step': => @jump()
+    }
 
   jump: ->
     currentLine = atom.workspace.getActiveTextEditor().getLastCursor().getCurrentBufferLine()
